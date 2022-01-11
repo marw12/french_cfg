@@ -29,34 +29,45 @@ contain negations in direct object pronouns. For example ‘il le ne regarde pas
 CFG.
 
 ### Overgeneration cases:
-*‘Montréal mange le poisson’*\n
+*‘Montréal mange le poisson’*
+
 This sentence is grammatically incorrect.
 
 ### Undergeneration cases:
 *‘il la ne regarde pas’*
+
 This is a grammatically correct sentence that is missed.
 
 ## Accepted sentences:
 
 *‘les Bleus regardent la télévision’*
-### Parse tree:
+
+**Parse tree:**
+
 (S
 (NP (DT_pl les) (PN_pl Bleus))
 (VP (V_ils regardent) (NP (DT_fm la) (N_fm télévision))))
 
 *‘les chats mangent le beau poisson’*
-### Parse tree:
+
+**Parse tree:**
+
 (S
 (NP (DT_pl les) (N_pl chats))
 (VP
 (V_ils mangent)
 (NP (B (DT_ml le) (A_pre beau)) (N_ml poisson))))
-‘il la regarde’
-### Parse tree:
+
+*‘il la regarde’*
+
+**Parse tree**:
+
 (S (B (PR_je il) (DT_fm la)) (V_je regarde))
 
 *‘nous ne regardons pas la télévision’*
-### Parse tree:
+
+**Parse tree:**
+
 (S
 (NP nous)
 (VP
@@ -67,13 +78,17 @@ This is a grammatically correct sentence that is missed.
 ## Rejected sentences
 
 *‘les heureux chats mangent le poisson’*
+
 Since the adjective ‘heureux is suppose to follow the noun ‘chats’
 
 *‘la poisson mangent les chats’*
+
 Since the article ‘la’’ does not agree with the grammatical gender of the noun ‘poisson’
 
 *‘il regarde la télévisions’*
+
 Since the determiner ‘la’ does not agree with the plural of the noun ‘télévisions’
 
 *‘Je mange les’*
+
 Since the determiner is after the noun
