@@ -29,7 +29,7 @@ contain negations in direct object pronouns. For example ‘il le ne regarde pas
 CFG.
 
 ### Overgeneration cases:
-*‘Montréal mange le poisson’*
+*‘Montréal mange le poisson’*\n
 This sentence is grammatically incorrect.
 
 ### Undergeneration cases:
