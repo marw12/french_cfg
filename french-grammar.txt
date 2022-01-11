@@ -1,0 +1,69 @@
+S
+S -> NP VP
+S -> VP NP
+S -> VP
+NP -> DT_pl N_pl
+NP -> DT_ml N_ml
+NP -> DT_fm N_fm
+NP -> PN
+NP -> DT_pl PN_pl
+NP -> DT_ml PN_ml
+NP -> DT_fm PN_fm
+NP -> DT_pl A_pre N_pl
+NP -> DT_ml A_pre N_ml
+NP -> DT_fm A_pre N_fm
+NP -> DT_pl N_pl A_post
+NP -> DT_ml N_ml A_post
+NP -> DT_fm N_fm A_post
+NP -> DT_pl A_both N_pl
+NP -> DT_ml A_both N_ml
+NP -> DT_fm A_both N_fm
+NP -> DT_pl N_pl A_both
+NP -> DT_ml N_ml A_both
+NP -> DT_fm N_fm A_both
+VP -> PR_je DT_ml V_je
+VP -> PR_je DT_fm V_je
+VP -> V_je NP
+VP -> V_tu NP
+VP -> V_nous NP
+VP -> V_vous NP
+VP -> V_ils NP
+VP -> PR_je V_je
+VP -> PR_tu V_tu
+VP -> PR_vous V_vous
+VP -> PR_nous V_nous
+VP -> PR_ils V_ils
+VP -> PP_je NG NP
+VP -> PP_tu NG NP
+VP -> PP_nous NG NP
+VP -> PP_vous NG NP
+VP -> PP_ils NG NP
+PP_je -> 'ne' V_je
+PP_tu -> 'ne' V_tu
+PP_nous -> 'ne' V_nous
+PP_vous -> 'ne' V_vous
+PP_ils -> 'ne' V_ils
+DT_pl -> 'les'
+DT_ml -> 'le'
+DT_fm -> 'la'
+PR_je -> 'je' | 'il' | 'elle'
+PR_tu -> 'tu'
+PR_vous -> 'vous'
+PR_nous -> 'nous'
+PR_ils -> 'ils'
+V_je -> 'regarde' | 'mange'
+V_tu -> 'regardes' | 'manges'
+V_nous -> 'regardons' | 'mangeons'
+V_vous -> 'regardez' | 'mangez'
+V_ils -> 'mangent' | 'regardent'
+N_ml -> 'chat' | 'poisson'
+N_fm -> 'télévision' | 'semaine'
+N_pl -> 'chats' | 'poissons' | 'télévisions' | 'semaines'
+PN -> 'Montréal' | 'Jonathan' 
+PN_pl -> 'Bleus' | 'Pyramides'
+PN_ml -> 'Canada' | 'Danube'
+PN_fm -> 'Méditerranée' | 'France'
+A_pre -> 'beau' | 'belle' | 'beaux' | 'belles' | 'joli' | 'jolie' | 'jolis' | 'jolies'
+A_post -> 'noir' | 'noire' | 'noirs' | 'noires' | 'heureux' | 'heureuse' | 'heureuses'
+A_both -> 'dernière' | 'dernier'
+NG -> 'pas'
